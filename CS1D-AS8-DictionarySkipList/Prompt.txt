@@ -1,0 +1,54 @@
+ 
+   Develop software to implement a dictionary using a skip list.  
+ Identify the output of pseudo random number generator that was 
+ used (true or false). Test all dictionary methods.
+
+ After inputting the data 
+   - Output each level of the skip list 
+   - Output the dictionary keys and values 
+
+ Use the following data to test your dictionary (same data as 
+ Assignment 7).
+
+ Use the following input:
+   18 San Clemente 
+   41 Mission Viejo
+   22 Laguna Niguel
+   44 Irvine
+
+   Delete key 18
+
+   58 Lake Forest
+   32 San Diego
+   49 Anaheim
+
+   Delete key 58
+
+   31 Los Angeles
+   17 Orange
+   72 Palms Springs
+   41 Riverside
+
+   Delete key 49
+
+   19 Brea
+   60 Santa Ana
+   35 Tustin
+   103 Oceanside
+   11 La Jolla
+   18 Del Mar
+   22 Aliso Viejo
+   49 Laguna Beach
+
+   Delete key 41
+
+   42 Vista
+   49 San Diego
+   99 San Juan
+   29 Dana Point
+   88 El Segundo
+   41 San Clemente
+   62 Laguna Hills
+
+
+ Due March 25th.
