@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\Support">
-      <UniqueIdentifier>{ba86d826-cae6-4a90-bc1c-26e2ab96116f}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -24,10 +21,7 @@
     <ClInclude Include="PrintHeader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Except.h">
-      <Filter>Header Files\Support</Filter>
-    </ClInclude>
-    <ClInclude Include="SkipListTemplate.h">
+    <ClInclude Include="SkipList.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

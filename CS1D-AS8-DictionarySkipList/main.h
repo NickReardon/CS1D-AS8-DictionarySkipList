@@ -1,10 +1,10 @@
-/******************************************************************************************
-* AUTHOR 	  		: Nick Reardon
-* Assignment #8	: Skip Lists
-* CLASS : CS1D
-* SECTION : MW - 2 : 30p
-* DUE DATE : 03 / 25 / 20
-******************************************************************************************/
+/*****************************************************************************
+ * AUTHOR 	  		: Nick Reardon
+ * Assignment #8	: Skip Lists
+ * CLASS			: CS1D
+ * SECTION			: MW - 2:30p
+ * DUE DATE			: 03 / 25 / 20
+ *****************************************************************************/
 #ifndef _MAIN_H_
 #define _MAIN_H_
 
@@ -15,7 +15,7 @@
 #include "PrintHeader.h"
 
 //Program Specific
-#include "SkipListTemplate.h"
+#include "SkipList.h"
 
 #endif // _HEADER_H_
 

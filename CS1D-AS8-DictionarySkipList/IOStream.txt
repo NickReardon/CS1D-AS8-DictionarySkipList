@@ -1,0 +1,186 @@
+****************************************************************************
+* PROGRAMMED BY : Nick Reardon
+* CLASS         : CS1D
+* SECTION       : MW - 2:30p
+* Assignment #8 : Skip Lists
+****************************************************************************
+
+                  Assignment #8 - Skip Lists
+
+
+   Develop software to implement a dictionary using a skip list.
+ Identify the output of pseudo random number generator that was
+ used (true or false). Test all dictionary methods.
+
+ After inputting the data
+   - Output each level of the skip list
+   - Output the dictionary keys and values
+
+ Use the following data to test your dictionary (same data as
+ Assignment 7).
+
+ Use the following input:
+   18 San Clemente
+   41 Mission Viejo
+   22 Laguna Niguel
+   44 Irvine
+
+   Delete key 18
+
+   58 Lake Forest
+   32 San Diego
+   49 Anaheim
+
+   Delete key 58
+
+   31 Los Angeles
+   17 Orange
+   72 Palms Springs
+   41 Riverside
+
+   Delete key 49
+
+   19 Brea
+   60 Santa Ana
+   35 Tustin
+   103 Oceanside
+   11 La Jolla
+   18 Del Mar
+   22 Aliso Viejo
+   49 Laguna Beach
+
+   Delete key 41
+
+   42 Vista
+   49 San Diego
+   99 San Juan
+   29 Dana Point
+   88 El Segundo
+   41 San Clemente
+   62 Laguna Hills
+
+
+ Due March 25th.
+****************************************************************************
+
+Inserting: 18, 41, 22, 44
+Erasing 18
+Inserting: 58, 32, 49
+Erasing 58
+Inserting: 31, 17, 72, 41
+Erasing 49
+Inserting: 19, 60, 35, 103, 11, 18, 22, 49
+Erasing 41
+Inserting: 42, 49, 99, 29, 88, 41, 62
+
+----------
+value: La Jolla            key: 11        level: 7         [][][][][][][]
+value: Orange              key: 17        level: 1         []
+value: Del Mar             key: 18        level: 1         []
+value: Brea                key: 19        level: 4         [][][][]
+value: Aliso Viejo         key: 22        level: 7         [][][][][][][]
+value: Laguna Niguel       key: 22        level: 3         [][][]
+value: Dana Point          key: 29        level: 5         [][][][][]
+value: Los Angeles         key: 31        level: 1         []
+value: San Diego           key: 32        level: 1         []
+value: Tustin              key: 35        level: 2         [][]
+value: San Clemente        key: 41        level: 1         []
+value: Mission Viejo       key: 41        level: 1         []
+value: Vista               key: 42        level: 2         [][]
+value: Irvine              key: 44        level: 1         []
+value: San Diego           key: 49        level: 6         [][][][][][]
+value: Laguna Beach        key: 49        level: 1         []
+value: Santa Ana           key: 60        level: 2         [][]
+value: Laguna Hills        key: 62        level: 6         [][][][][][]
+value: Palms Springs       key: 72        level: 2         [][]
+value: El Segundo          key: 88        level: 1         []
+value: San Juan            key: 99        level: 2         [][]
+value: Oceanside           key: 103       level: 2         [][]
+
+----------
+
+----------
+level: 15
+level: 14
+level: 13
+level: 12
+level: 11
+level: 10
+level: 9
+level: 8
+level: 7
+level: 6
+          value: La Jolla                      key: 11
+          value: Aliso Viejo                   key: 22
+level: 5
+          value: La Jolla                      key: 11
+          value: Aliso Viejo                   key: 22
+          value: San Diego                     key: 49
+          value: Laguna Hills                  key: 62
+level: 4
+          value: La Jolla                      key: 11
+          value: Aliso Viejo                   key: 22
+          value: Dana Point                    key: 29
+          value: San Diego                     key: 49
+          value: Laguna Hills                  key: 62
+level: 3
+          value: La Jolla                      key: 11
+          value: Brea                          key: 19
+          value: Aliso Viejo                   key: 22
+          value: Dana Point                    key: 29
+          value: San Diego                     key: 49
+          value: Laguna Hills                  key: 62
+level: 2
+          value: La Jolla                      key: 11
+          value: Brea                          key: 19
+          value: Aliso Viejo                   key: 22
+          value: Laguna Niguel                 key: 22
+          value: Dana Point                    key: 29
+          value: San Diego                     key: 49
+          value: Laguna Hills                  key: 62
+level: 1
+          value: La Jolla                      key: 11
+          value: Brea                          key: 19
+          value: Aliso Viejo                   key: 22
+          value: Laguna Niguel                 key: 22
+          value: Dana Point                    key: 29
+          value: Tustin                        key: 35
+          value: Vista                         key: 42
+          value: San Diego                     key: 49
+          value: Santa Ana                     key: 60
+          value: Laguna Hills                  key: 62
+          value: Palms Springs                 key: 72
+          value: San Juan                      key: 99
+          value: Oceanside                     key: 103
+level: 0
+          value: La Jolla                      key: 11
+          value: Orange                        key: 17
+          value: Del Mar                       key: 18
+          value: Brea                          key: 19
+          value: Aliso Viejo                   key: 22
+          value: Laguna Niguel                 key: 22
+          value: Dana Point                    key: 29
+          value: Los Angeles                   key: 31
+          value: San Diego                     key: 32
+          value: Tustin                        key: 35
+          value: San Clemente                  key: 41
+          value: Mission Viejo                 key: 41
+          value: Vista                         key: 42
+          value: Irvine                        key: 44
+          value: San Diego                     key: 49
+          value: Laguna Beach                  key: 49
+          value: Santa Ana                     key: 60
+          value: Laguna Hills                  key: 62
+          value: Palms Springs                 key: 72
+          value: El Segundo                    key: 88
+          value: San Juan                      key: 99
+          value: Oceanside                     key: 103
+
+----------
+Find value by key 41
+Resulting value: San Clemente
+
+Calling size() method
+Resulting value: 22
+
+Press any key to continue . . .
